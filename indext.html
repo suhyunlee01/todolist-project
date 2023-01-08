@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Siona's Todo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="ask-name">
+            <h1 class="ask-name_text">Hi, What's Your Name?</h1>
+            <form class="hidden" id="login-form">
+                <input required maxlength="15" type="text" name="name"/>
+                <button class="log">Log In</button>
+            </form>
+        </div>
+        <div class="greeting-logout">
+            <h1 id="greeting" class="hidden"></h1>
+            <button id="log-out" class="log hidden" >Log Out</button>
+        </div>
+        <div class="clock-container">
+            <h2 id="clock" class="clock_text">00:00:00</h2>
+            <span class="ampm clock_text">ya</span>
+        </div>
+        <div class="quotes">
+            <span id="quotes-innertext_quotes"></span>
+            <span id="quotes-innertext_authors"></span>
+        </div>
+    </div>
+    <button class="show-todolist">To Do</button>
+    <div class="todo-container hidden">
+    <form id="todo-form">
+        <input type="text" placeholder="Write a to Do and Press Enter." required>
+    </form>
+    <ul id="todo-list"></ul>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    </body>
+</html>
